@@ -157,3 +157,4 @@ function cargarProductos() {
 
 cargarProductos();
 actualizarVista();
+mostrarCategoria("salchichas");
