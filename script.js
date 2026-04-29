@@ -3,10 +3,10 @@ let pedidos = [];
 // Cambiar categoría
 function mostrarCategoria(id) {
     document.querySelectorAll(".productos").forEach(sec => {
-        sec.style.display = "none";
+        sec.classList.remove("activa");
     });
 
-    document.getElementById(id).style.display = "flex";
+    document.getElementById(id).classList.add("activa");
 }
 
 // Agregar producto
