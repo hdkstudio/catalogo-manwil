@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f4f4f4;
+}
+
+.header {
+    background: black;
+    text-align: center;
+    padding: 15px;
+}
+
+.logo {
+    width: 180px;
+}
+
+.categorias {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
+    background: #222;
+}
+
+.categorias button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.productos {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 15px;
+}
+
+@media (min-width: 768px) {
+    .productos {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.card {
+    background: white;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-size: 13px;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+
+.codigo {
+    color: red;
+    font-weight: bold;
+}
+
+.card input {
+    width: 50%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.card button {
+    width: 55%;
+    padding: 8px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.agregado {
+    background: green !important;
+}
+
+.final {
+    text-align: center;
+    padding: 20px;
+}
+
+.whatsapp {
+    background: green;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pedido-box {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+#listaPedido {
+    font-size: 14px;
+}
+
+.redes a {
+    display: block;
+    margin: 5px;
+    color: blue;
+}
