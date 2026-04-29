@@ -32,6 +32,12 @@ body {
 }
 
 .productos {
+    display: none;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 15px;
+}
+.productos.activa {
     display: flex;
     overflow-x: auto;
     gap: 10px;
