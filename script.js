@@ -155,6 +155,8 @@ function cargarProductos() {
     });
 }
 
-cargarProductos();
-actualizarVista();
-mostrarCategoria("salchichas");
+window.onload = function() {
+    cargarProductos();
+    actualizarVista();
+    mostrarCategoria("salchichas");
+};
