@@ -6,7 +6,7 @@ function mostrarCategoria(id) {
         sec.style.display = "none";
     });
 
-    document.getElementById(id).style.display = "grid";
+    document.getElementById(id).style.display = "flex";
 }
 
 // Agregar producto
