@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f4f4f4;
+}
+
+/* ------------------ PANTALLA INICIO ------------------ */
+.pantalla-inicio {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #000, #222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.inicio-contenido {
+    background: rgba(255,255,255,0.08);
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 400px;
+    color: white;
+}
+
+.logo-inicio {
+    width: 220px;
+    margin-bottom: 15px;
+}
+
+.btn-comenzar {
+    background: red;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.btn-comenzar:hover {
+    background: #cc0000;
+}
+
+/* ------------------ HEADER ------------------ */
+.header {
+    background: black;
+    text-align: center;
+    padding: 15px;
+}
+
+.logo {
+    width: 180px;
+}
+
+/* ------------------ CATEGORIAS ------------------ */
+.categorias {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
+    background: #222;
+}
+
+.categorias button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.categorias button:hover {
+    background: #cc0000;
+}
+
+/* ------------------ PRODUCTOS ------------------ */
+.productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+}
+
+/* PC: 5 por fila */
+@media (min-width: 992px) {
+    .productos {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* Tablet: 3 por fila */
+@media (min-width: 600px) and (max-width: 991px) {
+    .productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ------------------ CARD ------------------ */
+.card {
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 13px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+    font-size: 14px;
+}
+
+.card p {
+    margin: 4px 0;
+}
+
+.codigo {
+    color: red;
+    font-weight: bold;
+}
+
+.card input {
+    width: 90%;
+    margin: 5px auto;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: block;
+}
+
+/* BOTONES */
+.botones-card {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.card button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.btn-agregar {
+    background: #007bff;
+}
+
+.btn-agregar:hover {
+    background: #005fc4;
+}
+
+.btn-quitar {
+    background: #dc3545;
+}
+
+.btn-quitar:hover {
+    background: #b51f2c;
+}
+
+.agregado {
+    background: green !important;
+}
+
+/* ------------------ FINAL ------------------ */
+.final {
+    text-align: center;
+    padding: 20px;
+}
+
+.whatsapp {
+    background: green;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.whatsapp i {
+    margin-right: 8px;
+}
+
+.pedido-box {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+}
+
+#listaPedido {
+    font-size: 14px;
+}
+
+/* ------------------ REDES ------------------ */
+.redes {
+    margin-top: 20px;
+}
+
+.redes p {
+    font-weight: bold;
+}
+
+.redes a {
+    display: inline-block;
+    margin: 8px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.redes a i {
+    margin-right: 8px;
+}
+
+.redes a:hover {
+    background: black;
+}
+
+.btn-borrar {
+    background: #dc3545;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.btn-borrar i {
+    margin-right: 8px;
+}
+
+.btn-borrar:hover {
+    background: #b51f2c;
+}

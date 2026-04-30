@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo</title>
+<link rel="stylesheet" href="styles.css">
+
+<!-- ICONOS (FontAwesome) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- PANTALLA DE INICIO -->
+<section id="inicio" class="pantalla-inicio">
+    <div class="inicio-contenido">
+        <img src="img/logomanwil.png" class="logo-inicio">
+        <h1>Catálogo Virtual</h1>
+        <button class="btn-comenzar" onclick="comenzar()">COMENZAR</button>
+    </div>
+</section>
+
+<!-- CATÁLOGO -->
+<section id="catalogo" style="display:none;">
+
+    <header class="header">
+        <img src="img/logomanwil.png" class="logo">
+    </header>
+
+    <nav class="categorias">
+        <button onclick="mostrarCategoria('salchichas')">SALCHICHAS</button>
+        <button onclick="mostrarCategoria('chorizos')">CHORIZOS</button>
+        <button onclick="mostrarCategoria('mortadelas')">MORTADELAS Y JAMONES</button>
+        <button onclick="mostrarCategoria('sellados')">MORTADELAS SELLADOS</button>
+        <button onclick="mostrarCategoria('salame')">SALAME Y PEPPERONI</button>
+        <button onclick="mostrarCategoria('tocino')">TOCÍNO Y PASTA DE HÍGADO</button>
+    </nav>
+
+    <section id="salchichas" class="productos"></section>
+    <section id="chorizos" class="productos" style="display:none;"></section>
+    <section id="mortadelas" class="productos" style="display:none;"></section>
+    <section id="sellados" class="productos" style="display:none;"></section>
+    <section id="salame" class="productos" style="display:none;"></section>
+    <section id="tocino" class="productos" style="display:none;"></section>
+
+    <div class="final">
+
+        <div class="pedido-box">
+            <h3>Vista previa del pedido</h3>
+            <div id="listaPedido"></div>
+        </div>
+
+        <button class="whatsapp" onclick="enviarPedido()">
+            <i class="fa-brands fa-whatsapp"></i> Enviar pedido por WhatsApp
+        </button>
+        
+        <button class="btn-borrar" onclick="borrarTodo()">
+    <i class="fa-solid fa-trash"></i> Borrar todo el pedido
+</button>
+
+
+        <div class="redes">
+            <p>Síguenos:</p>
+
+            <a href="https://wa.me/59165545622" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook"></i> Facebook
+            </a>
+
+            <a href="https://www.tiktok.com/" target="_blank">
+                <i class="fa-brands fa-tiktok"></i> TikTok
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
